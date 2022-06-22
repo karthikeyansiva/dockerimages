@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-      NAME = karthik
+      NAME = "karthik"
     }
     stages {
         stage ('Print') {
             steps {
-                echo "$NAME"
+                echo env.NAME
             }
         }
     }
